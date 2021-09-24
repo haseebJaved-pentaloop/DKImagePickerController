@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = { "Bannings" => "zhangao0086@gmail.com" }
   s.platform      = :ios, "9.0"
-  s.source        = { :git => "https://github.com/zhangao0086/DKImagePickerController.git", 
+  s.source        = { :git => "https://github.com/haseebJaved-pentaloop/DKImagePickerController.git", 
                      :tag => s.version.to_s }
   
   s.requires_arc  = true
