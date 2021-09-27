@@ -95,7 +95,7 @@ open class DKImageGroupDataManager: DKImageBaseManager, PHPhotoLibraryChangeObse
     open func fetchGroups(_ completeBlock: @escaping (_ groups: [String]?, _ error: NSError?) -> Void) {
         let assetGroupTypes = self.configuration.assetGroupTypes
         
-        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
+        DispatchQueue.global(qos: .background).sync { [weak self] in
             guard let strongSelf = self else { return }
             
             guard strongSelf.groups == nil else {
